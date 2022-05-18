@@ -16,7 +16,7 @@ export default function Container() {
     }
   ]);
   useEffect(()=>{
-    fetch("http://10.26.49.55:4000/api/services/produto/listar")
+    fetch("http://10.26.49.20:4000/api/services/produto/listar")
     .then((response)=>response.json())
     .then((dados)=>{
     setProdutos(dados.output);
